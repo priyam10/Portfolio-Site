@@ -1,0 +1,171 @@
+
+@font-face {
+    font-family: 'FontAwesome'; 
+    src: local('fontawesome/fonts/fontawesome-webfont.ttf'); /*URL to font*/
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+#intro_container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+}
+
+#intro_screen{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	z-index: 1;
+}
+
+#intro_div{
+	position: absolute;
+	background-color:white; 
+	width:500px; 
+	height:124px; 
+	filter: alpha(opacity=50);
+	border-radius:2px;
+	top: 50%;
+	left: 50%;
+	margin: -62px 0 0 -250px;
+	opacity: 0.7; 
+	z-index: 20;
+	box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+#intro_text{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 137px;
+	font-size: 50px;
+	text-color: transparent;
+}
+
+#intro_button {
+  transition: 0.3s ease all;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  border-opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top:-200px;
+  margin: -50px 0 0 -60px;
+  opacity: 1;
+  z-index: 15;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+}
+
+.intro_button3 {
+  transition: 0.3s ease all;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  border-opacity: 1;
+  margin-bottom: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.2);
+  top: 70%;
+  left: 50%;
+  margin: -50px 0 0 -60px;
+  opacity: 0.5;
+  z-index: 15;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+}
+
+
+#down_arrow {
+  position: relative;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black;
+  border-radius: 20%;
+  margin-top: 45px;
+  margin-left: 25px;
+  opacity: 0.3;
+}
+
+#intro_button:hover{
+	cursor: pointer; 
+	background: white;
+	opacity: 1;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0% {margin-top: 25px;}
+    50% {margin-top: 45px;}
+	100% {margin-top: 25px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {margin-top: 0px;}
+    50% {margin-top: 15px;}
+	100% {margin-top: 0px;}
+}
+
+#about_me{
+	position: absolute;
+	top: 100%;
+	width:100%;
+	height:300px;
+	opacity: 0.7;
+	z-index: 9;
+}
+
+#nav_bar{	
+	visibility: hidden;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes test {
+    0% {margin-top: 25px; width: 200px; height: 200px;}
+    50% {margin-top: 50px; width: 150px; height: 150px;}
+	100% {margin-top: 125px;width: 100px; height: 100px;}
+}
+
+/* Standard syntax */
+@keyframes test {
+    0% {width: 200px; height: 200px;}
+    50% {top:60%; width: 150px; height: 150px; margin: -40px;}
+	100% {top: 50%;width: 100px; height: 100px;  margin: -50px;}
+}
+
+#my_intro{
+	position: absolute;
+	top:  50%;
+	margin: 0 auto;
+}
+
+.darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor, .headercolor {
+    transition: color 1s ease;
+}
+
+.bgcolor, .darkbgcolor, .ultradarkbgcolor,
+.bgcolor-transparent, .darkbgcolor-transparent, .ultradarkbgcolor-transparent {
+    transition: background-color 1s ease;
+}
